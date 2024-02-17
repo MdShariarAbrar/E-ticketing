@@ -4,11 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paharika Express</title>
+
+    <!-- daisy ui and tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
     <!--=====================================
         ========== header section=========== -->
-    <header>
+    <header class="w-4/5 mx-auto">
+
+        <!-- ==============================
+        =========nav section============== -->
+        <nav class="flex justify-between items-center">
+            <div><h2 class="text-black text-4xl font-bold">E-Ticket</h2></div>
+            <div>
+                <ul class="flex text-[#030712] text-xl">
+                    <li class="p-8"><a href="">Home</a></li>
+                    <li class="p-8"><a href="">About</a></li>
+                    <li class="p-8"><a href="">Destination</a></li>
+                    <li class="p-8"><a href="">Search</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="flex items-center px-8 py-4 border rounded-xl border-green-500 bg-green-100 text-green-500 text-2xl font-bold">
+                    <span class="mr-4">Bus</span>
+                    <img src="images/bus-icon.png" alt="">
+                </button>
+            </div>
+        </nav>
+
+        <!--=======================================
+            ======= banner section ============== -->
+        <div class="banner my-12 ">
+            <div class="hero min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
+                
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with </h1>
+                    <h1 class="mb-5 text-5xl font-bold text-[#1DD100]">P Paribahan </h1>
+                    <p class="mb-5">Paharika express is the reliable paribahan service in our country. You can enjoy a very pleasing journey</p>
+                    <button class="py-4 px-8 bg-[#1DD100] font-bold text-black rounded-xl">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- banner badge -->
+              <div class="flex justify-around relative bottom-20">
+                <div class="flex items-center w-80 justify-center  p-12 border-b-4 border-[#1DD100] rounded-3xl bg-white">
+                    <img src="images/people.png" alt="">
+                    <div class="ml-6">
+                        <h2 class="text-4xl font-bold">500K+ </h2>
+                        <p class="text-[#030712]">Registered Users</p>
+                    </div>
+                </div>
+                <div class="flex items-center w-80 justify-center  p-12 border-b-4 border-[#1DD100] rounded-3xl bg-white">
+                    <img src="images/ticket-cupon.png" alt="">
+                    <div class="ml-6">
+                        <h2 class="text-3xl font-bold">1.7 lacks </h2>
+                        <p class="text-[#030712]">Ticket sold</p>
+                    </div>
+                </div>
+                <div class="flex items-center w-80 justify-center  p-12 border-b-4 border-[#1DD100] rounded-3xl bg-white">
+                    <img src="images/stoppage.png" alt="">
+                    <div class="ml-6">
+                        <h2 class="text-4xl font-bold">80K+ </h2>
+                        <p class="text-[#030712]">Rental partners</p>
+                    </div>
+                </div>
+
+              </div>
+        </div>
+
 
     </header>
 
@@ -21,7 +89,7 @@
     <!--======================================
         ======== footer section============ -->
     <footer>
-        
+
     </footer>
 </body>
 </html>
