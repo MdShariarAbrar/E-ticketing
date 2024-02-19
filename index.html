@@ -157,8 +157,8 @@
                             <div>
                                 <button class="flex gap-2 items-center text-[#1DD100] bg-[#1cd10026] p-5 rounded-2xl text-xl font-semibold">
                                     <img src="images/seat-green.png" alt="">
-                                    <span>40</span>
-                                    <span>Seats left</span>
+                                    <span id="seat-left">8</span>
+                                    <span >Seats left</span>
                                 </button>
                             </div>
                         </div>
@@ -237,7 +237,7 @@
                                 <button  class="py-3  ">B</button>
                             </div>
 
-                            <div class="col-span-4 grid grid-cols-2 gap-6">
+                            <div id="seat-container1" class="col-span-4 grid grid-cols-2 gap-6">
                                 <button id="A1" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">A1</button>
                                 <button id="A2" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">A2</button>
                                 <button id="B1" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">B1</button>
@@ -270,17 +270,21 @@
                         <div class="bg-[#F7F8F8] p-6 rounded-2xl">
                             <div>
                                 <div class="grid grid-cols-3 text-center">
-                                    <p class="text-xl font-medium ">Seat <span class="text-base text-white bg-[#1DD100] px-2 rounded-lg">0</span></p>
+                                    <p class="text-xl font-medium ">Seat <span id="seat-booked" class="text-base text-white bg-[#1DD100] px-2 rounded-lg">0</span></p>
                                     <p class="text-xl font-medium ">Class</p>
                                     <p class="text-xl font-medium ">Price</p>
                                 </div>
                                 <hr class="border-dashed border-t-2 border-gray-300 my-3">
+                                <!-- =========dynamic display===== -->
+                                <div id="display" class="grid grid-cols-3 text-center">
+
+                                </div>
 
                             </div>
 
                             <div class="flex justify-between items-center my-4">
                                 <p class="text-xl font-medium">Total Price</p>
-                                <p class="text-xl font-medium">BDT <span>0</span></p>
+                                <p class="text-xl font-medium">BDT <span id="total">0</span></p>
                             </div>
 
                             <div>
@@ -293,7 +297,7 @@
 
                             <div class="flex justify-between items-center my-4">
                                 <p class="text-xl font-medium">Grand Total</p>
-                                <p class="text-xl font-medium">BDT <span>0</span></p>
+                                <p class="text-xl font-medium">BDT <span id="gt">0</span></p>
                             </div>
                         </div>
 
@@ -371,5 +375,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>
