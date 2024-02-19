@@ -32,8 +32,10 @@ let discount = document.getElementById("discount");
 
 
 function handleBook(event){
+    submit.disabled = false;
     if(selectedSeat < 4) {
         event.target.classList.add('bg-green-500');
+        event.target.classList.add('text-white');
 
     availableSeat--;
     selectedSeat++;
@@ -59,6 +61,10 @@ function handleBook(event){
     document.getElementById(event.target.id).removeEventListener('click', handleBook)
     } else {
         alert("you can not select more than 4 seats");
+    }
+
+    if(selectedSeat == 4) {
+        cuponCode.disabled = false;
     }
 
 }
@@ -105,7 +111,10 @@ function handleCupon(event) {
 }
 
 
+
+
 function handleSubmit(event) {
+
     
 
     if (name.value && phone.value) {
@@ -174,5 +183,9 @@ cuponApply.addEventListener('click', handleCupon);
 modalContinue.addEventListener('click', handleModal);
 
 submit.addEventListener('click', handleSubmit)
+
+
+
+
 
 
