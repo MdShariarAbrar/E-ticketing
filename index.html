@@ -127,7 +127,7 @@
 
         <!--====================================
          =========dashboard======================= -->
-         <section class="border-t-4 border-[#1DD100] rounded-[100px] bg-[#F7F8F8]">
+         <section class="border-t-4 border-[#1DD100] rounded-[100px] bg-[#F7F8F8] pb-24">
             <div class="w-4/5 mx-auto">
 
                 <div>
@@ -140,10 +140,10 @@
 
                 <!-- =========================
                 ====bus info=========== -->
-                <div class="bg-white p-8 rounded-2xl">
+                <div class="bg-white  rounded-2xl flex items-center mb-4">
                     
-                    <div class="w-4/5">
-                        <div class="flex items-center justify-between ">
+                    <div class="w-4/5 p-8">
+                        <div class="flex items-center justify-between mb-6">
                             <div class="flex items-center gap-4">
                                 <div>
                                     <img src="images/bus-logo.png" alt="">
@@ -186,6 +186,144 @@
                     </div>
 
                     <div>
+                        <img src="images/info-devider.png" alt="">
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="images/fare.png" alt="">
+                        <h2 class="text-4xl font-bold">550 Taka</h2>
+                        <p class="text-3xl text-[#03071299]">Per Seat</p>
+                    </div>
+
+                    <div>
+
+                    </div>
+
+                </div>
+
+                <!-- =====================================
+                =========ticketing section============== -->
+
+                <div class="bg-white  rounded-2xl  grid grid-cols-10">
+                    <!-- =================================
+                    =====seat layout================== -->
+                    <div class="col-span-6 p-8">
+                        <h2 class="text-3xl">Select your seat</h2>
+
+                        <hr class="border-dashed border-t-2 border-gray-400 my-6">
+
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <img src="images/seat-gray.png" alt="">
+                                <span class="font-medium text-xl text-[#03071280]">Available</span>
+                            </div>
+                            <div>
+                                <img src="images/seat-green-filled.png" alt="">
+                                <span class="font-medium text-[#1DD100] text-xl">Selected</span>
+                            </div>
+                        </div>
+
+                        <hr class="border-dashed border-t-2 border-gray-300 my-6">
+
+                        <div class="text-right mb-6">
+                            <button class="py-3 px-10 bg-gray-400 rounded-xl"><img src="images/wheel.svg" alt=""></button>
+                        </div>
+
+                       
+
+                        <div class="grid grid-cols-10  gap-12">
+                            <div class="grid grid-cols-1">
+                                <button  class="py-3  ">A</button>
+                                <button  class="py-3  ">B</button>
+                            </div>
+
+                            <div class="col-span-4 grid grid-cols-2 gap-6">
+                                <button id="A1" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">A1</button>
+                                <button id="A2" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">A2</button>
+                                <button id="B1" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">B1</button>
+                                <button id="B2" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">B2</button>
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                            <div class="col-span-4 grid grid-cols-2 gap-6">
+                                <button id="A3" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">A3</button>
+                                <button id="A4" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">A4</button>
+                                <button id="B3" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">B3</button>
+                                <button id="B4" class="py-3 px-10 bg-[#F7F8F8] rounded-xl ">B4</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- =============ticket info display==================
+                    ================= ===================================-->
+                    <div class="col-span-4 border-l-2 border-dashed border-gray-400 p-8">
+                        <h2 class="text-3xl">Select your seat</h2>
+                        <hr class="border-dashed border-t-2 border-gray-300 my-6">
+
+                        <!-- ======================================
+                        ========dynamic display============= -->
+                        <div class="bg-[#F7F8F8] p-6 rounded-2xl">
+                            <div>
+                                <div class="grid grid-cols-3 text-center">
+                                    <p class="text-xl font-medium ">Seat <span class="text-base text-white bg-[#1DD100] px-2 rounded-lg">0</span></p>
+                                    <p class="text-xl font-medium ">Class</p>
+                                    <p class="text-xl font-medium ">Price</p>
+                                </div>
+                                <hr class="border-dashed border-t-2 border-gray-300 my-3">
+
+                            </div>
+
+                            <div class="flex justify-between items-center my-4">
+                                <p class="text-xl font-medium">Total Price</p>
+                                <p class="text-xl font-medium">BDT <span>0</span></p>
+                            </div>
+
+                            <div>
+                                <label class="input  flex items-center gap-2">
+                                    <input type="text" class="grow" placeholder="Have any copupon?" />
+                                    <button class=" text-white px-8 py-2 rounded-xl bg-[#1DD100]" disabled>Apply</button>
+                                    
+                                </label>
+                            </div>
+
+                            <div class="flex justify-between items-center my-4">
+                                <p class="text-xl font-medium">Grand Total</p>
+                                <p class="text-xl font-medium">BDT <span>0</span></p>
+                            </div>
+                        </div>
+
+                        <!-- passenger login -->
+                        <div >
+                            <div class="w-full my-4">
+                                <p class="text-xl font-bold mb-4">Passenger Name *</p>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered w-full " />
+                            </div>
+                            
+                            <div class="w-full my-4">
+                                <p class="text-xl font-bold mb-4">Phone Number *</p>
+                                <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full " />
+                            </div>
+                            <div class="w-full my-4">
+                                <p class="text-xl font-bold mb-4">Passenger Name </p>
+                                <input type="email" placeholder="Enter your email id" class="input input-bordered w-full " />
+                            </div>
+
+                            <div>
+                                <button class=" text-white p-6  rounded-xl bg-[#1DD100] w-full" >Next</button>
+                            </div>
+
+                            <div class="flex justify-around my-4">
+                                <a href="">Terms and Conditions</a>
+                                <a href="">Cancellation Policy</a>
+                            </div>
+                            
+                            
+                        </div>
 
                     </div>
 
@@ -200,8 +338,38 @@
 
     <!--======================================
         ======== footer section============ -->
-    <footer>
+    <footer class="bg-[#030712]">
+        <div class="w-4/5 mx-auto py-24">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-4xl text-white font-bold">P-Ticket</h2>
+                    <p class="text-lg text-white">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+                </div>
 
+                <div>
+                    <p class="text-lg font-semibold text-white">Download our app</p>
+                    <div class="flex items-center border border-white rounded-xl p-2 gap-2">
+                        <img src="images/playstore.png" alt="">
+                        <div>
+                            <p class="text-white text-sm">GET IT ON</p>
+                            <P class="text-white text-2xl">Google Play</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-dashed border-t-2 border-gray-300 my-8">
+
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-white">@all rights reserved, P-Ticket services limited.2024</p>
+                </div>
+                <div class="flex justify-between items-center text-white text-base font-semibold gap-4">
+                    <p>Terms & condition</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
